@@ -1,0 +1,4 @@
+GitPython==3.1.12
+looker-deployer==0.3.0
+looker-sdk==0.1.3b14
+
