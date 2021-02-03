@@ -50,6 +50,8 @@ Install python packages (includes looker_deployer) `pip install -r requirements.
 ## Usage
 The script can be run with various sub-commands.  Available sub-commands are: `delete`, `deploy`, `develop`, `new`, `rename`, `rollback`, `status`, and `update`.
 
+In the examples given below, all commands must start with:`python manage_dashboards.py `
+
 ### Delete
 Delete the specified dashboard from the source folder, with the option to archive it first
 ```
