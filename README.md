@@ -125,7 +125,7 @@ optional arguments:
 
 Create a new blank dashboard in the target folder
 ```
-usage: main.py new [-h] --name NAME [--ini INI] --env ENV
+usage: manage_dashboard.py new [-h] --name NAME [--ini INI] --env ENV
                    [--target_folder TARGET_FOLDER] --version VERSION
 
 optional arguments:
@@ -146,7 +146,7 @@ optional arguments:
 
 If you are renaming a dashboard that is managed by this tool and it exists in multple folders, it is important to run this command on the dashboard in each folder.
 ```
-usage: main.py rename [-h] --name NAME --new_name NEW_NAME [--ini INI] --env
+usage: manage_dashboard.py rename [-h] --name NAME --new_name NEW_NAME [--ini INI] --env
                       ENV [--source_folder SOURCE_FOLDER] --version VERSION
 
 optional arguments:
@@ -189,7 +189,7 @@ optional arguments:
 
 Prints the catalog file
 ```
-usage: main.py status [-h] [--ini INI] --env ENV
+usage: manage_dashboard.py status [-h] [--ini INI] --env ENV
 
 optional arguments:
   -h, --help  show this help message and exit
