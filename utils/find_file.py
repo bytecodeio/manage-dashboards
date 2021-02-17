@@ -2,7 +2,7 @@ import os
 
 
 def get_filename(local_folder, dash_id, folder):
-    id_line = '"id": {}'.format(dash_id)
+    id_line = '"dashboard_id": {},'.format(dash_id)
     search_path = local_folder + "Shared/" + folder + "/"
     for filename in os.listdir(search_path):
         with open(search_path + filename, 'r') as file:

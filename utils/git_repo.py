@@ -55,7 +55,10 @@ def write_to_repo(repo, commit_message):
 def checkout_commit(ini, env, commit, temp_git_dir):
     git_ini = parse_ini.read_ini(ini)
     git_config = git_ini[env]
-    git_url = "https://{}:x-oauth-basic@{}".format(git_config["git_token"], git_config["git_base"])
+    git_token = git_config["git_token"]
+    git_base = git_config["git_base"]
+    git_url = f"https://{git_token}:x-oauth-basic@{git_base}"
+
     if path.exists(temp_git_dir):
         print("Temp directory {} already exists for cloning of specific commit".format(temp_git_dir))
         exit(1)
